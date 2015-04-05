@@ -123,6 +123,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.sites",
     "django.contrib.staticfiles",
+    'raven.contrib.django.raven_compat',
 
     # external
     "account",
