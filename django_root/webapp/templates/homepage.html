@@ -1,0 +1,73 @@
+
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}SharperTool - Saas Solutions{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body_base %}
+    <section class="jumbotron">
+        <div class="container">
+            {% include "_messages.html" %}
+            <h1>{% blocktrans %}Welcome to<br>SharperTool SaaS Solutions{% endblocktrans %}</h1>
+            <p>
+                {% blocktrans %}
+                We develop online solutions for sports, hobby and service activities.
+                {% endblocktrans %}
+            </p>
+            {% comment %}
+            {% if not user.is_authenticated %}
+            {% url "account_login" as login_url %}
+            {% url "account_signup" as signup_url %}
+            <p>{% blocktrans %}You can <a href="{{ login_url }}" class="btn btn-default">Log In</a> or <a href="{{ signup_url }}" class="btn btn-primary">Sign Up</a> to try out the site.{% endblocktrans %}</p>
+            {% endif %}
+            {% endcomment %}
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="text-center">{% blocktrans %}What do we do?{% endblocktrans %}</h2>
+            <p class="lead">
+                {% blocktrans %}
+                    <b>SharperTool</b> is the parent company for <a href="http://gardenbuzz.com" target="_blank"><b>GardenBuzz</b></a>
+                    and <a href="http://tennisblock.com" target="_blank"><b>Tennisblock.com</b></a>.
+                    These are two projects that we are currently working on, and we have more in the works.
+                    We are a technical and creative group of developers, designers, and gardeners. We are active
+                    in tennis, and other outdoor activities. We build what we use, which is why we are so
+                    passionate about what we do.
+                {% endblocktrans %}
+            </p>
+            <div class="feature-columns">
+                <div>
+                    <i class="fa fa-cubes fa-3x"></i><br>
+                    {% blocktrans %}
+                        We use the <b>Python</b> programming language and
+                        <b>Django Web Framework</b> to build powerful,
+                        flexible and exciting websites. Python and Django are a powerful
+                        combination, and give us unlimited flexibility, fast development times,
+                        and many re-usable solutions so that we can build optimized solutions.
+                    {% endblocktrans %}
+                </div>
+                <div>
+                    <i class="fa fa-puzzle-piece fa-3x"></i><br>
+                    {% blocktrans %}
+                        Javascript? You bet! AngularJS drives many of our
+                        pages, along with other established client side tools.
+                        We constantly evaluate new technologies and use them when
+                        they are proven, stable, and ready for prime time. We do not
+                        plan to fall behind the technology curve anytime soon.
+                    {% endblocktrans %}
+                </div>
+                <div>
+                    <i class="fa fa-tint fa-3x"></i><br>
+                    {% blocktrans %}
+                        
+
+                    {% endblocktrans %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
