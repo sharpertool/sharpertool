@@ -63,7 +63,7 @@ STATIC_URL = "/site_media/static/"
 
 # Additional locations of static files, if any.
 STATICFILES_DIRS = [
-    PACKAGE_ROOT.child('static'),
+    #PACKAGE_ROOT.child('static'),
 ]
 
 # List of finder classes that know how to find static files in
