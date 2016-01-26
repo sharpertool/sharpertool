@@ -21,7 +21,7 @@
             {% if not user.is_authenticated %}
             {% url "account_login" as login_url %}
             {% url "account_signup" as signup_url %}
-            <p>{% blocktrans %}You can <a href="{{ login_url }}" class="btn btn-default">Log In</a> or <a href="{{ signup_url }}" class="btn btn-primary">Sign Up</a> to try out the site.{% endblocktrans %}</p>
+            <p>{% blocktrans %}<a href="{{ login_url }}" class="btn btn-default">Log In</a> or <a href="{{ signup_url }}" class="btn btn-primary">Sign Up</a> to try out the site.{% endblocktrans %}</p>
             {% endif %}
             {% endcomment %}
         </div>
@@ -55,6 +55,11 @@
                     {% blocktrans %}
                         Javascript? You bet! AngularJS drives many of our
                         pages, along with other established client side tools.
+
+                        ReactJS is a technology we are working with to make re-usable web
+                        modules. We expect to use more and more of ReactJS and related tools
+                        in the future.
+
                         We constantly evaluate new technologies and use them when
                         they are proven, stable, and ready for prime time. We do not
                         plan to fall behind the technology curve anytime soon.
@@ -63,9 +68,10 @@
                 <div>
                     <i class="fa fa-tint fa-3x"></i><br>
                     {% blocktrans %}
-                        Our server infrastructure is based on Amazon Web services. We rock
-                        AWS! Scaling? No problem! We know AWS well, and use it effectively.
-                        We can handle the load.
+                        Our server infrastructure is based on Amazon Web services. 
+                        We know AWS well, and use it effectively.
+
+                        On the backend we use MySQL, and PostgreSQL.
                     {% endblocktrans %}
                 </div>
             </div>

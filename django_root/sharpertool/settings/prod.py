@@ -19,5 +19,5 @@ DATABASES = {
 
 
 RAVEN_CONFIG = {
-    'dsn': 'https://53acba3177ec4ce4be06cca3ba5602f3:4ee592373d8c41968c730327cfb6b808@app.getsentry.com/41135',
+    'dsn': 'https://959ab970310d45b18f07b40cfa365517:abf36a6715774ba182ca01dee91df778@app.getsentry.com/41136',
 }
